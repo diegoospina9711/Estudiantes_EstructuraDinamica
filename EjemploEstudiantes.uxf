@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>50</y>
+      <w>140</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Estudiante
+--
+- codigo: int
+- nombre: String
+- nota: double
+--
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>240</x>
+      <y>150</y>
+      <w>430</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>UsaEstudiante
+--
+- losEstudiantes:ArrayList&lt;Estudiante&gt;
+--
++ main(): void
++ UsaEstudiante(): void
++ agregarEstudianteActionPerformed( evt: ActionEvent ): void
++ eliminarEstudianteActionPerformed(evt: ActionEvent): void
++ mostrarTodosActionPerformed(evt: ActionEvent): void
++ salirActionPerformed(evt: ActionEvent): void
+
++ mostrarTodos( datos:ArrayList&lt;Estudiante&gt; ): String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>110</x>
+      <y>140</y>
+      <w>150</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+
+</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>220</x>
+      <y>50</y>
+      <w>450</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Notas:
+bg=gray
+. Se omiten: constructores, getters, setters y toString
+. mostrarTodos despliega la información de cada estudiante
+. se tiene un método para el método ejecutado al pulsar los botones
+. ActionEvent se corresponde a la clase java.awt.event.ActionEvent</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
